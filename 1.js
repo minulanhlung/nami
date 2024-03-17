@@ -25,7 +25,7 @@ function sendEmail(){
 
 
     Email.send({
-         SecureToken:"9e22944c-3389-4a64-8041-2b4a930f5559";
+        // SecureToken:
         Host : "smtp.elasticemail.com",
         Username : "order@nami-ol.de",
         Password : "EF5921812A0540329172177BFC5EC45075A8",
