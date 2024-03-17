@@ -25,12 +25,12 @@ function sendEmail(){
 
 
     Email.send({
-        // SecureToken:
+         SecureToken:"9e22944c-3389-4a64-8041-2b4a930f5559";
         Host : "smtp.elasticemail.com",
-        Username : "methuy115@gmail.com",
-        Password : "B87124840C284FC7423B6EE1B1CAE969674A",
-        To : 'methuy115@gmail.com',
-        From : 'methuy115@gmail.com',
+        Username : "order@nami-ol.de",
+        Password : "EF5921812A0540329172177BFC5EC45075A8",
+        To : 'order@nami-ol.de',
+        From : 'order@nami-ol.de',
         Subject : "Feedback from customers",
         Body : bodymessage
     }).then(
