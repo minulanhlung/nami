@@ -10,6 +10,10 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 20rem;
+}
 
 
 .pic{
@@ -115,18 +119,26 @@ p,
 .container-fluid .row{
     background-color: #fff;
     position: relative;
-    margin: 2rem 0px 2rem 0px;
+    /* margin: 2rem 0px 2rem 0px; */
+    gap :10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-fluid .row .card{
     position: relative;
-    background-color: #d0202e;
+    background-color: rgba(208, 32, 46, 0.5);
     border: none;
     outline: none;
+}
+.container-fluid .row .card .card-text{
+    color: #fff;
 }
 
 .container-fluid .row .card img{
     transition: all 0.5s ease;
+    /* height:510px; */
+    border-radius: 5px;
 }
 .container-fluid .row .card:hover img{
     transform: translateY(-15px);
@@ -280,6 +292,15 @@ p,
 .contact-right{
     margin: 1rem;
 }
+.erro-text{
+    color:red;
+    margin: -15px 0 10px;
+    display: none;
+}
+.error .erro-text{
+    display:block;
+}
+
 @media screen and (max-width:800px){
     .contact-container{
         flex-direction: column;
@@ -352,17 +373,14 @@ p,
     color: #fff;
     transform: translateY(-30px);
 }
-.end p{
-    position: relative;
-    bottom: 40px;
-}
+
 
 @media screen and (max-width:800px){
     .end{
         flex-direction: column;
         gap:1.5rem;
     }
-    .end p{
+    .end h6{
         width: 100%;
         text-align: center;
     }
@@ -372,7 +390,7 @@ p,
 }
 
 @media screen and (min-width:800px){
-    .end p{
+    .end h6{
         width: 33.3%;
     }
 }
