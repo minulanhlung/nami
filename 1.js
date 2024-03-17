@@ -30,7 +30,7 @@ function sendEmail(){
         Username : "methuy115@gmail.com",
         Password : "B87124840C284FC7423B6EE1B1CAE969674A",
         To : 'methuy115@gmail.com',
-        From : email.value,
+        From : 'methuy115@gmail.com',
         Subject : "Feedback from customers",
         Body : bodymessage
     }).then(
@@ -73,5 +73,8 @@ function checkinputs(){
 form.addEventListener("submit", (e) => { 
       e.preventDefault();
       sendEmail();
+     
+      form.reset();
+      return false;
 });
 
